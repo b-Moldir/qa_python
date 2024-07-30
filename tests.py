@@ -22,3 +22,10 @@ class TestBooksCollector:
 
     # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+    def test_get_books_for_children_without_genre_age_rating(self):
+        collector = BooksCollector()
+
+
+        collector.set_book_genre('Гордость и предубеждение и зомби', 'Ужасы')
+
+        assert  collector.set_book_genre
